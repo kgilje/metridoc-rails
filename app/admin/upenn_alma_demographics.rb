@@ -8,5 +8,11 @@ ActiveAdmin.register UpennAlma::Demographic do
     :statistical_category_3,
     :statistical_category_4,
     :statistical_category_5,
-    :school
+    :school,
+    :pennkey,
+    :penn_id,
+    :first_name,
+    :last_name,
+    :email,
+    :user_group
 end
