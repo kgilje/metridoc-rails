@@ -14,7 +14,7 @@ class ConsultationInteractionMailer < ApplicationMailer
     # URL encode both the staff_pennkey and the patron_name
     # Turn the date into a UNIX timestamp in seconds then convert into milliseconds.
     @url = base_url + '?' +
-      '4244862=' + ERB::Util.url_encode(@event.staff_pennkey) + '&' +
+      '4244862=' + ERB::Util.url_encode(@staff_name) + '&' +
       '4244863=' + ERB::Util.url_encode(@event.patron_name) + '&' +
       '4244864=' + @event.event_date.to_time.to_i.to_s + '000'
 
