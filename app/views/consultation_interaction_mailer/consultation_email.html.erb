@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Dear Library Patron (<%= @event.patron_name %>),
+    <p>Thank you for connecting with <%= @staff_name %> on <%= @event.event_date %>.
+      Is there anything else we can do to support your research?</p>
+
+    <p>Please consider answering a few questions about your experience: <br>
+    <a href=<%= @url %>> Personalized Survey Link</a> </p>
+
+
+    <p>-The Penn Libraries Academic Engagement Team<br>
+      <a href="https://www.library.upenn.edu/chat">Live chat</a> M-F, 9-5PM
+      or
+      <a href="https://libcal.library.upenn.edu/appointments">schedule an appointment</a>
+    </p>
+
+    <p>Do not reply. This mailbox is not monitored.</p>
+    <p>You received this email because you agreed to a follow-up survey at the time of your consultation.</p>
+
+  </body>
+</html>

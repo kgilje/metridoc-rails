@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Dear <%= @event.patron_name %></h1>
+    <p>
+      You recently requested instruction at the library on: <%= @event.event_date %>.<br>
+      Please fill out the brief survey to help us better help you.
+    </p>
+    <p>
+      To do the survey, just follow this link: <%= @url %>.
+    </p>
+    <p>Thank you for your time!</p>
+    <p>Cordially</p>
+    <p>Impact Assessment and Organizational Analysis</p>
+
+  </body>
+</html>
