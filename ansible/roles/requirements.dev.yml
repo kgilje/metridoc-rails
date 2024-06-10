@@ -1,11 +1,24 @@
 ---
 collections:
+  # Requirement for nginx
+  - name: ansible.posix
+    version: 1.4.0
+  # Requirement for nginx
+  - name: community.general
+    version: 6.2.0
+  # Requirement for nginx if using Molecule
+  - name: community.docker
+    version: 3.4.0
+  # The nginx core collection
   - name: nginxinc.nginx_core
-    version: 0.3.0
+    version: 0.8.0
 
 roles:
+  # the original repo can't handle python3 so we will use a fork until it can
   - name: atosatto.docker-swarm
-    version: v2.2.0
+    src: https://gitlab.library.upenn.edu/devops/ansible/ansible-dockerswarm
+    scm: git
+    version: master
 
   - name: shibboleth_sp
     src: https://github.com/upenn-libraries/ansible_shibboleth_sp.git
